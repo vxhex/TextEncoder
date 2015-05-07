@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.84" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="148dp"
+            android:layout_gravity="fill_horizontal"
+            android:scrollHorizontally="false"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TableRow>
+        <Button
+            android:id="@+id/base64encode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="clickHandler"
+            android:text="Base64 Encode" />
+
+        <Button
+            android:id="@+id/base64decode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickHandler"
+            android:text="Base64 Decode" />
+        </TableRow>
+
+        <TableRow>
+        <Button
+            android:id="@+id/URLencode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:onClick="clickHandler"
+            android:text="URL Encode" />
+
+        <Button
+            android:id="@+id/URLdecode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickHandler"
+            android:text="URL Decode" />
+        </TableRow>
+
+        <TableRow>
+        <Button
+            android:id="@+id/morseencode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:text="Morse Encode" />
+        
+        <Button
+            android:id="@+id/morsedecode"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickHandler"
+            android:text="Morse Decode" />
+        </TableRow>
+        
+        <TableRow>
+        <EditText
+            android:id="@+id/asciishiftnumber"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:text="13" />
+
+        <Button
+            android:id="@+id/asciishift"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickHandler"
+            android:text="ASCII Shift" />
+        </TableRow>
+        
+        <TableRow>
+            <EditText
+            android:id="@+id/findtext"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="Find" />
+            
+         	<EditText
+            android:id="@+id/replacetext"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="Rep." />
+
+        <Button
+            android:id="@+id/replace"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickHandler"
+            android:text="Replace All" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
